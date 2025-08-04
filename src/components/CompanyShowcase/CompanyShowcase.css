@@ -1,0 +1,58 @@
+/* src/components/CompanyShowcase/CompanyShowcase.css */
+
+.company-showcase {
+  background: var(--black);
+  border-radius: 30px;
+  padding: var(--spacing-xl);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.3);
+}
+
+.company-showcase::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: var(--gradient-primary);
+  border-radius: 32px;
+  z-index: 1;
+}
+
+.showcase-content {
+  position: relative;
+  z-index: 2;
+  background: var(--black);
+  border-radius: 28px;
+  padding: var(--spacing-lg);
+  text-align: center;
+}
+
+.showcase-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--primary-yellow);
+  margin-bottom: var(--spacing-md);
+}
+
+.showcase-description {
+  color: var(--white);
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-lg);
+  opacity: 0.9;
+}
+
+.company-values {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-md);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .company-values {
+      grid-template-columns: 1fr;
+  }
+}

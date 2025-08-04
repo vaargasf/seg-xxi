@@ -1,0 +1,32 @@
+/* src/components/ValueItem/ValueItem.css */
+
+.value-item {
+  background: rgba(255, 215, 0, 0.1);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-medium);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  transition: all var(--transition-medium);
+}
+
+.value-item:hover {
+  background: rgba(255, 215, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.value-icon {
+  font-size: 2rem;
+  color: var(--primary-yellow);
+  margin-bottom: var(--spacing-sm);
+}
+
+.value-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.value-description {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+}

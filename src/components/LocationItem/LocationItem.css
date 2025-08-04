@@ -1,0 +1,40 @@
+/* src/components/LocationItem/LocationItem.css */
+
+.location-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--spacing-md);
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: var(--border-radius-medium);
+  transition: all var(--transition-medium);
+  cursor: pointer;
+  border-left: 4px solid transparent;
+}
+
+.location-item:hover {
+  transform: translateX(10px);
+  background: var(--primary-yellow);
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.3);
+  border-left-color: var(--black);
+}
+
+.location-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--primary-yellow);
+  border-radius: var(--border-radius-medium);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--black);
+  transition: all var(--transition-medium);
+}
+
+.location-item:hover .location-icon {
+  background: var(--black);
+  color: var(--primary-yellow);
+  transform: scale(1.1);
+}

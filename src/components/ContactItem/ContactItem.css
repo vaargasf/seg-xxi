@@ -1,0 +1,36 @@
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  padding: var(--spacing-md);
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: var(--border-radius-medium);
+  transition: all var(--transition-medium);
+  cursor: pointer;
+  border-left: 4px solid transparent;
+}
+
+.contact-item:hover {
+  transform: translateX(10px);
+  background: rgba(255, 215, 0, 0.1);
+  border-left-color: var(--primary-yellow);
+  box-shadow: 0 10px 30px var(--shadow-medium);
+}
+
+.contact-icon {
+  width: 70px;
+  height: 70px;
+  background: var(--primary-yellow);
+  border-radius: var(--border-radius-medium);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: var(--spacing-md);
+  font-size: 1.8rem;
+  color: var(--black);
+  transition: all var(--transition-medium);
+}
+
+.contact-item:hover .contact-icon {
+  transform: scale(1.1) rotate(5deg);
+}

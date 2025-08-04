@@ -1,0 +1,47 @@
+/* src/components/HighlightItem/HighlightItem.css */
+
+.highlight-item {
+  background: var(--white);
+  padding: var(--spacing-md);
+  border-radius: var(--border-radius-medium);
+  box-shadow: 0 10px 30px var(--shadow-light);
+  transition: all var(--transition-medium);
+  cursor: pointer;
+  border-left: 4px solid var(--primary-yellow);
+  position: relative;
+  overflow: hidden;
+}
+
+.highlight-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 215, 0, 0.1), transparent);
+  transition: left 0.6s;
+}
+
+.highlight-item:hover::before {
+  left: 100%;
+}
+
+.highlight-item:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(255, 215, 0, 0.2);
+}
+
+.highlight-number {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--primary-yellow);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.highlight-label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--dark-gray);
+}
